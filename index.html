@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Octava Aplicacion</title>
+  
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app8.min.css">
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  
+  
+</head>
+
+<body>
+
+  <div data-role="page" id="Principal" data-theme="b">
+   <div data-role="header">
+    <h1>MOSTRAR APPS</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+  </div>
+   <div>
+     <ul data-role="listview" datatheme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>APP4</h2>
+         <p>Se ejecuta la app4.</p>
+       </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>APP5</h2>
+          <p>Se ejecuta la app5</p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>APP7</h2>
+           <p>Se ejecuta la app7</p>
+         </a>
+        </li>
+       
+        </ul>
+        </div>
+        <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+            <img src="res/android/mdpi.png" width"46" height="46">
+          </div>
+          <div>
+            <h4>Aplicación Ocho</h4>
+            <h4>Mario Salvador Solís</h4>
+          </div>
+         </div>
+        </div>
+          <div data-role="page" id="Pagina1" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+            <h1>DATOS DEL DISPOSITIVO</h1>
+            </div>
+            
+            <div data-role="main" class="ui-content">
+            <div>
+              <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+                <li class="ui-first-child ui-last-child">
+                <a href="#page2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <h2>DISPOSITIVO</h2>
+                </a>
+                </li>
+                 <li class="ui-first-child ui-last-child">
+                <a href="#page3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <h2>EVENTOS</h2>
+                </a>
+                </li>
+                </ul>
+                </div>
+                </div>
+                
+                 <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                        <h4>Mario Salvador Solis</h4>
+                        <img src="res/android/mdpi.png" width="40" height="40">
+                        </div>
+                        </div>
+                  
+                  <div data-role="page" id="page2" data-theme="b">
+                    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                    <h1>DISPOSITIVO</h1>
+                    </div>
+                    <div data-role="main" class="ui-content">
+                      <div id="disp">
+                      <table width="200" border="1" id="datos">
+                      <tr>
+                        <td width="83">Datos</td>
+                        <td width="101">Dispositivo</td>
+                        </tr>
+                        <tr>
+                        <td>Nombre</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                        <td>Phonegap</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                        <td>Plataforma</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                        <td>Versión</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                        <td>UUID</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                        </table>
+                      </div>
+                      </div>
+                      
+                      <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                        <h4>Mario Salvador Solis</h4>
+                        <img src="res/android/mdpi.png" width="40" height="40">
+                        </div>
+                        </div>
+                        
+                         <div data-role="page" id="page3" data-theme="b">
+                    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                    <h1>DISPOSITIVO</h1>
+                    </div>
+                    <div data-role="main" class="ui-content">
+                      <div>
+                        <h2>Historia:</h2>
+                        <ul id="eHistoria">
+                        </ul>
+                      </div>
+                      </div>
+                      
+                      <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+                        <h4>Mario Salvador Solis</h4>
+                        <img src="res/android/mdpi.png" width="40" height="40">
+                        </div>
+                        </div>
+        
+        <div data-role="page" id="Pagina2" data-theme="b">
+  <div data-role="header">
+    <h1>Advertencias del Dispositivo</h1>
+   </div>
+   
+   <div data-role="main" class="ui-content" align="center">
+   <div style="width:40%;">
+     <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+       <li class="ui-first-child ui-last-child">
+         <a href="#" data-role="button" id="beep">
+           <h2>Beep</h2>
+         </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+         <a href="#" data-role="button" id="vibrar">
+           <h2>Vibrar</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+         
+         <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicación Ocho, MSS</h4>
+         </div>
+       </div>
+       
+      <div data-role="page" id="Pagina3" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Aplicación 7 DESLIZAR (Swipe)</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+  <div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="#page6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Deslizar</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <h4>Mario Salvador Solis</h4>
+  <img src="res/android/mdpi.png" width="30" height="30">
+  </div>
+  </div>
+  
+  <div data-role="page" id="page6" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Acciones</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <div>
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#page10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Izquierda</h2>
+    </a>
+    </li>
+      <li class="ui-first-child ui-last-child">
+    <a href="#page11" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Derecha</h2>
+    </a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    
+    <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <h4>Mario Salvador Solis</h4>
+    <img src="res/android/mdpi.png" width="30" height="30">
+    </div>
+    </div>
+    
+    <div data-role="page" id="page10" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Desliza a la izquierda</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div id="izquierda" style="width:90%; height:300px; background-color:#09F;">
+    </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <h4>Mario Salvador Solis</h4>
+    <img src="res/android/mdpi.png" width="30" height="30">
+    </div>
+    </div>
+    
+    <div data-role="page" id="page11" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Desliza a la derecha</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div id="derecha" style="width:90%; height:300px; background-color:#09F;">
+    </div>
+    </div>
+   
+   
+       </div>
+       
+       
+</body>
+</html>
